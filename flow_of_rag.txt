@@ -1,0 +1,6 @@
+Project setup: structure, config, FastAPI app, /health
+Basic RAG: load, chunk, embed, Chroma, index, search
+LangGraph Agentic RAG: state, router, retriever, critic, conditional routing, final answer
+FastAPI endpoints: /chat, /upload, schemas, streaming
+Evaluation: small dataset, correctness, hallucination, DeepEval
+Production basics: logging, errors, Docker, compose, tests, README, DECISIONS.md, CI
