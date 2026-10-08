@@ -1,0 +1,7 @@
+Shipping Information
+
+Orders are packed and shipped within 2 business days.
+Standard shipping takes 5 to 7 business days and costs $4.99.
+Orders above $50 get free standard shipping.
+Express shipping takes 2 to 3 business days and costs $14.99.
+We currently ship only within the United States and Canada.
