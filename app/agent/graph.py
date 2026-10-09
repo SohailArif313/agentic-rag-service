@@ -5,6 +5,7 @@ from app.agent.nodes import AgentNodes
 from app.agent.state import AgentState
 from app.config import Settings
 from app.rag.vector_store import get_vector_store
+from langchain_chroma import Chroma
 
 
 def build_graph(llm, vector_store, top_k: int, max_rewrites: int):
@@ -42,10 +43,10 @@ def build_graph(llm, vector_store, top_k: int, max_rewrites: int):
     return builder.compile()
 
 
-def create_agent(settings: Settings):
+def create_agent(settings: Settings, vector_store: Chroma | None = None):
     return build_graph(
         llm=get_llm(settings),
-        vector_store=get_vector_store(settings),
+        vector_store=vector_store or get_vector_store(settings),
         top_k=settings.top_k,
         max_rewrites=settings.max_rewrites,
     )

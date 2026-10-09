@@ -10,3 +10,10 @@ dependencies = [
     "langgraph>=1.2.14",
     "pydantic-settings>=2.15.0",
 ]
+
+[dependency-groups]
+ui = [
+    "httpx>=0.28.1",
+    "python-dotenv>=1.2.4",
+    "streamlit>=1.65.0",
+]

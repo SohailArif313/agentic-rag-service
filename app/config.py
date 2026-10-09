@@ -19,6 +19,9 @@ class Settings(BaseSettings):
     chat_model: str = "gpt-4o-mini"
     max_rewrites: int = 1
     top_k: int = 3
+    access_key: SecretStr
+    rate_limit_per_minute: int = 10
+    daily_request_cap: int = 200
 
     model_config = SettingsConfigDict(env_file=".env", extra="ignore")
 
